@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Button, View } from 'react-native';
+import { Button, Text, View } from 'react-native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { NavigationContainer } from '@react-navigation/native';
 
@@ -10,6 +10,14 @@ function HomeScreen({ navigation }) {
         onPress={() => navigation.navigate('Notifications')}
         title="Go to notifications"
       />
+      <Text>
+        <Text>First part and </Text>
+        <Text>second part</Text>
+      </Text>
+      <View>
+        <Text>First part and </Text>
+        <Text>second part</Text>
+      </View>
     </View>
   );
 }
